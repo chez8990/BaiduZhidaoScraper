@@ -84,7 +84,6 @@ def scraper(keywords=[], nb_pages_per_word=10):
 		keywords = [keywords]
 
 	baseURL = 'http://zhidao.baidu.com/' #the base url is not secured
-	keywords = [kw.replace(' ', "%20") for kw in keywords]
 
 	result_columns = ['url', 'keyword', 'title', 'descrption', 'answer']
 	results = []
